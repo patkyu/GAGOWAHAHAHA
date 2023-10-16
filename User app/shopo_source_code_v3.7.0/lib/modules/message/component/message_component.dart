@@ -21,7 +21,7 @@ class MessageComponent extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 4),
+        padding: EdgeInsets.symmetric(vertical: 4),
         child: element.product == null
             ? BubbleNormal(
                 text: element.message,
@@ -66,10 +66,10 @@ class InboxProductContainer extends StatelessWidget {
           dashPattern: const [12, 6],
           strokeWidth: 2,
           radius: const Radius.circular(0),
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.all(0),
           color: Utils.dynamicPrimaryColor(context),
           child: Container(
-            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+            padding: EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             constraints: BoxConstraints(
                 maxWidth: MediaQuery.of(context).size.width * .65),
             decoration: BoxDecoration(

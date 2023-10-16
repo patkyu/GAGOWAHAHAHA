@@ -16,7 +16,7 @@ class FeedbackProductCard extends StatelessWidget {
     const double height = 120;
     return Container(
       height: height,
-      padding: const EdgeInsets.all(15),
+      padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
         border: Border.all(color: const Color(0xffE8EEF2)),

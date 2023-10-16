@@ -16,7 +16,7 @@ class SingleReviewCardComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 24),
+      margin: EdgeInsets.only(bottom: 24),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -57,7 +57,7 @@ class SingleReviewCardComponent extends StatelessWidget {
                   ignoreGestures: true,
                   itemCount: 5,
                   itemSize: 14,
-                  itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                  itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
                   itemBuilder: (context, _) => const Icon(
                     Icons.star,
                     color: Colors.amber,

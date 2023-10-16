@@ -135,9 +135,9 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
                           ),
                         ),
                       ),
-                      margin: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 10),
-                      padding: const EdgeInsets.only(bottom: 6),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      padding: EdgeInsets.only(bottom: 6),
                       child: Text(
                         e.value,
                         style: TextStyle(
@@ -153,7 +153,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
         ),
         if (widget.address.addresses.isNotEmpty)
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               Language.swipeToDelete.capitalizeByWord(),
               style: Theme.of(context)
@@ -170,12 +170,11 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
             physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               return ListView.builder(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 itemCount: widget.address.addresses.length,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: EdgeInsets.only(bottom: 10),
                     child: InkWell(
                       onTap: () {
                         if (addressTypeSelect ==

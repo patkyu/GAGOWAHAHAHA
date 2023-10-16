@@ -22,7 +22,7 @@ class HotDealBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height,
-      margin: const EdgeInsets.symmetric(horizontal: 8),
+      margin: EdgeInsets.symmetric(horizontal: 8),
       width: MediaQuery.of(context).size.width,
       child: Stack(
         fit: StackFit.expand,
@@ -69,7 +69,7 @@ class HotDealBanner extends StatelessWidget {
 
   Container buildContainerContent(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 16, bottom: 16),
+      padding: EdgeInsets.only(left: 16, bottom: 16),
       color: Colors.black.withOpacity(.1),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -85,7 +85,7 @@ class HotDealBanner extends StatelessWidget {
                   });
             },
             child: Container(
-              padding: const EdgeInsets.all(8),
+              padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Utils.dynamicPrimaryColor(context),
                 borderRadius: BorderRadius.circular(0),

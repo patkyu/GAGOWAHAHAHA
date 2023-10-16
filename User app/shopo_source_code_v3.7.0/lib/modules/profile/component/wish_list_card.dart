@@ -30,14 +30,14 @@ class _WishListCardState extends State<WishListCard> {
       child: Container(
         height: height,
         color: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 4.0),
+        padding: EdgeInsets.symmetric(horizontal: 4.0),
         child: Row(
           children: [
             Container(
               width: 125.0,
-            height: height,
-            padding: const EdgeInsets.symmetric(vertical: 5.0).copyWith(right: 6.0),
-            // color: Colors.red,
+              height: height,
+              padding: EdgeInsets.symmetric(vertical: 5.0).copyWith(right: 6.0),
+              // color: Colors.red,
               child: CustomImage(
                 path: RemoteUrls.imageUrl(widget.product.thumbImage),
                 fit: BoxFit.contain,
@@ -55,7 +55,7 @@ class _WishListCardState extends State<WishListCard> {
                       fontSize: 14, fontWeight: FontWeight.w600),
                 ),
                 subtitle: Text(
-                  Utils.formatPrice(widget.product.price,context),
+                  Utils.formatPrice(widget.product.price, context),
                   style: const TextStyle(
                       color: redColor,
                       fontSize: 16,

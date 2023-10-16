@@ -61,7 +61,7 @@ class _DrawerFilterState extends State<DrawerFilter> {
 
           return Drawer(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 30),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -188,8 +188,8 @@ class _DrawerFilterState extends State<DrawerFilter> {
               });
             },
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              margin: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: variantsItem.contains(filterOptions
@@ -198,7 +198,7 @@ class _DrawerFilterState extends State<DrawerFilter> {
                     : Utils.dynamicPrimaryColor(context).withOpacity(0.2),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(bottom: 4.0),
+                padding: EdgeInsets.only(bottom: 4.0),
                 child: Text(filterOptions
                     .activeVariants[index].activeVariantsItems[i].name),
               ),
@@ -221,8 +221,8 @@ class _DrawerFilterState extends State<DrawerFilter> {
               });
             },
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              margin: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: brands.contains(filterOptions.brands[index].id)
@@ -230,7 +230,7 @@ class _DrawerFilterState extends State<DrawerFilter> {
                     : Utils.dynamicPrimaryColor(context).withOpacity(0.2),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(bottom: 4.0),
+                padding: EdgeInsets.only(bottom: 4.0),
                 child: Text(
                   filterOptions.brands[index].name,
                 ),

@@ -78,7 +78,7 @@ class CategoryLoad extends StatelessWidget {
     int page = 1;
     final categoryProduct = context.read<CategoryCubit>().categoryProducts;
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       child: Column(
         children: [
           Row(
@@ -91,10 +91,10 @@ class CategoryLoad extends StatelessWidget {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                         color: Utils.dynamicPrimaryColor(context)),
-                    padding: const EdgeInsets.symmetric(horizontal: 6),
-                    margin: const EdgeInsets.symmetric(vertical: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 6),
+                    margin: EdgeInsets.symmetric(vertical: 6),
                     child: Padding(
-                      padding: const EdgeInsets.only(bottom: 4.0),
+                      padding: EdgeInsets.only(bottom: 4.0),
                       child: Text(Language.filter.capitalizeByWord()),
                     )),
               ),

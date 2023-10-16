@@ -18,7 +18,7 @@ class RelatedProductsList extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 0),
+          padding: EdgeInsets.symmetric(horizontal: 0),
           child: SectionHeader(
             headerText: Language.relatedProduct.capitalizeByWord(),
             onTap: () {},
@@ -30,7 +30,7 @@ class RelatedProductsList extends StatelessWidget {
           child: ListView.separated(
             separatorBuilder: (context, index) => const SizedBox(width: 16),
             scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+            padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
             itemCount: relatedProducts.length,
             itemBuilder: (context, index) => RelatedSingleProductCard(
                 productModel: relatedProducts[index], width: 180),

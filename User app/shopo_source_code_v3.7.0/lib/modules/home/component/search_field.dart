@@ -15,9 +15,9 @@ class SearchField extends StatelessWidget {
       height: 52,
       // width: double.infinity,
       decoration: const BoxDecoration(
-        color:  Color(0xffF6F6F6),
+        color: Color(0xffF6F6F6),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
       child: TextFormField(
         onTap: () {
           Utils.closeKeyBoard(context);
@@ -30,7 +30,7 @@ class SearchField extends StatelessWidget {
               .textTheme
               .labelMedium!
               .copyWith(color: grayColor),
-          contentPadding: const EdgeInsets.symmetric(
+          contentPadding: EdgeInsets.symmetric(
             vertical: 11,
             horizontal: 16,
           ),
@@ -38,7 +38,6 @@ class SearchField extends StatelessWidget {
           //     const BoxConstraints(maxHeight: 32, minWidth: 32),
         ),
       ),
-
     );
   }
 }

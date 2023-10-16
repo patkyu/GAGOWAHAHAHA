@@ -198,7 +198,7 @@ class _EditAddressScreenState extends State<EditAddressScreen> {
                     }
 
                     return SingleChildScrollView(
-                      padding: const EdgeInsets.all(20),
+                      padding: EdgeInsets.all(20),
                       child: Form(
                         key: _formkey,
                         child: Column(

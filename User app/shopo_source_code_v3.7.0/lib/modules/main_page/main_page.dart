@@ -70,7 +70,7 @@ class _MainPageState extends State<MainPage> {
           Container(
               width: double.infinity,
               alignment: Alignment.center,
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               decoration: const BoxDecoration(
                   color: blackColor,
                   borderRadius:
@@ -96,7 +96,7 @@ class _MainPageState extends State<MainPage> {
                     Navigator.pop(context);
                   },
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 5),
+                    padding: EdgeInsets.only(bottom: 5),
                     child: Text(Language.cancel.capitalizeByWord()),
                   )),
               const SizedBox(width: 10),
@@ -109,7 +109,7 @@ class _MainPageState extends State<MainPage> {
                     SystemNavigator.pop();
                   },
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 5),
+                    padding: EdgeInsets.only(bottom: 5),
                     child: Text(Language.yesExit.capitalizeByWord()),
                   )),
             ],

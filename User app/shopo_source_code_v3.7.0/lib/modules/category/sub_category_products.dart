@@ -39,7 +39,7 @@ class SubCategoryProductScreen extends StatelessWidget {
                 mainAxisSpacing: 10,
                 mainAxisExtent: 230,
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 25),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
               itemCount: products.length,
               itemBuilder: (context, index) =>
                   ProductCard(productModel: products[index]),

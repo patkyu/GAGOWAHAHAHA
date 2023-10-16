@@ -37,7 +37,7 @@ class _MessageInputFieldState extends State<MessageInputField> {
   Widget build(BuildContext context) {
     final chatBloc = context.read<ChatBloc>();
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0)
+      margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0)
           .copyWith(bottom: 8),
       // decoration: BoxDecoration(
       //   color: const Color(0xff3b5998).withOpacity(0.06),
@@ -48,7 +48,7 @@ class _MessageInputFieldState extends State<MessageInputField> {
           // Container(
           //   height: 34,
           //   width: 34,
-          //   margin: const EdgeInsets.symmetric(horizontal: 5),
+          //   margin: EdgeInsets.symmetric(horizontal: 5),
           //   decoration: const BoxDecoration(
           //     shape: BoxShape.circle,
           //     color: Utils.dynamicPrimaryColor(context),
@@ -67,7 +67,7 @@ class _MessageInputFieldState extends State<MessageInputField> {
               decoration: inputDecorationTheme.copyWith(
                 hintText: '${Language.typeHere}...',
                 contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(50)),
                 enabledBorder: OutlineInputBorder(

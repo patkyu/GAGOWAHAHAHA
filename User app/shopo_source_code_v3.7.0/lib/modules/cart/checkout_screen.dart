@@ -192,7 +192,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
                     },
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 6.0),
+                    padding: EdgeInsets.only(bottom: 6.0),
                     child: Text(
                       Language.agreeTermAndCondition.capitalizeByWord(),
                       style: GoogleFonts.inter(
@@ -214,7 +214,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
 
   Widget _bottomBtn() {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: Row(
         children: [
           Expanded(
@@ -292,7 +292,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
       children: [
         const SizedBox(height: 8),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -303,7 +303,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
                   Navigator.pushNamed(context, RouteNames.addressScreen);
                 },
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  padding: EdgeInsets.symmetric(horizontal: 12),
                   height: 22,
                   decoration: BoxDecoration(
                     color: Utils.dynamicPrimaryColor(context),
@@ -368,9 +368,9 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
                             ? Utils.dynamicPrimaryColor(context)
                             : Colors.transparent,
                       ))),
-                      margin: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 10),
-                      padding: const EdgeInsets.only(bottom: 6),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      padding: EdgeInsets.only(bottom: 6),
                       child: Text(
                         e.value,
                         style: TextStyle(
@@ -392,7 +392,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return SingleChildScrollView(
-                  padding: const EdgeInsets.only(left: 20),
+                  padding: EdgeInsets.only(left: 20),
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
@@ -409,7 +409,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
 
   Widget shippingCharges(List<AddressModel> addresses, int index) {
     return Padding(
-      padding: const EdgeInsets.only(right: 10),
+      padding: EdgeInsets.only(right: 10),
       child: InkWell(
         onTap: () {
           if (addressTypeSelect == 'Billing Address') {
@@ -466,7 +466,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
   SliverPadding _buildProductList() {
     final appSetting = context.read<AppSettingCubit>();
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       sliver: SliverList(
         delegate: SliverChildBuilderDelegate(
           (context, index) {
@@ -483,7 +483,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
 
   Widget _buildProductNumber() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 20, 20, 14),
+      padding: EdgeInsets.fromLTRB(20, 20, 20, 14),
       child: Row(
         children: [
           const Icon(Icons.shopping_cart_rounded, color: redColor),

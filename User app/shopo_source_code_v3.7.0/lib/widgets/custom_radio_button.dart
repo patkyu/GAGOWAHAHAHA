@@ -22,7 +22,7 @@ class CustomRadioButton extends StatelessWidget {
             border: Border.all(color: paragraphColor),
             color: Colors.white,
             borderRadius: BorderRadius.circular(12)),
-        padding: const EdgeInsets.all(4),
+        padding: EdgeInsets.all(4),
         child: isSelected
             ? const CircleAvatar(backgroundColor: paragraphColor)
             : null,

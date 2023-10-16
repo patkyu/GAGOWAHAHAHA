@@ -19,7 +19,7 @@ class SectionHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -31,18 +31,22 @@ class SectionHeader extends StatelessWidget {
                 height: 1.5,
                 fontWeight: FontWeight.w600),
           ),
-          isSeeAllShow? InkWell(
-            onTap: onTap,
-            child: Container(
-              // color: iconGreyColor,
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: Text(
-                Language.seeAll.capitalizeByWord(),
-                style: const TextStyle(
-                    fontSize: 16, color: Color(0xff797979), height: 1.625),
-              ),
-            ),
-          ):const SizedBox(),
+          isSeeAllShow
+              ? InkWell(
+                  onTap: onTap,
+                  child: Container(
+                    // color: iconGreyColor,
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: Text(
+                      Language.seeAll.capitalizeByWord(),
+                      style: const TextStyle(
+                          fontSize: 16,
+                          color: Color(0xff797979),
+                          height: 1.625),
+                    ),
+                  ),
+                )
+              : const SizedBox(),
         ],
       ),
     );

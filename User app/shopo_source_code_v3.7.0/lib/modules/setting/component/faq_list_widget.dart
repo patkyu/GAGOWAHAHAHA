@@ -47,7 +47,7 @@ class _FaqListWidgetState extends State<FaqListWidget> {
                   // contentPadding: EdgeInsets.zero,
                 ),
                 body: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Html(data: e.answer),
                 ),
               ),

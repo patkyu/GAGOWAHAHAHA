@@ -16,7 +16,7 @@ class ChangePasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: RoundedAppBar(titleText: 'Change password'),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(20.0),
         child: BlocConsumer<ChangePasswordCubit, ChangePasswordStateModel>(
           listener: (context, state) {
             final stateStatus = state.status;

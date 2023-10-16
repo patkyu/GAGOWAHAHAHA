@@ -34,7 +34,7 @@ class BecomeSellerScreen extends StatelessWidget {
           }
         },
         child: ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          padding: EdgeInsets.symmetric(horizontal: 20.0),
           children: [
             const BannerImage(),
             //spacer,
@@ -223,7 +223,7 @@ class BecomeSellerScreen extends StatelessWidget {
               },
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 5.0),
+              padding: EdgeInsets.only(bottom: 5.0),
               child: Text(
                 'Agree Terms & Condition',
                 style: TextStyle(color: blackColor.withOpacity(.5)),

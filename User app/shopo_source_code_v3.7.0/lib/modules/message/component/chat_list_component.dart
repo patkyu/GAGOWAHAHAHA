@@ -13,7 +13,7 @@ class ChatListComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       sliver: SliverList(
         delegate: SliverChildBuilderDelegate(
           (context, index) =>
@@ -23,7 +23,7 @@ class ChatListComponent extends StatelessWidget {
       ),
     );
     // return ListView.builder(
-    //   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+    //   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
     //   itemCount: 15,
     //   itemBuilder: (_, index) =>
     //       SingleChatListItem(item: chatList[index % chatList.length]),

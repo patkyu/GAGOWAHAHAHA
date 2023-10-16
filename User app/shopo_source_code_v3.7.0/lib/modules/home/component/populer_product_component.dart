@@ -18,14 +18,13 @@ class HorizontalProductComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     if (productList.isEmpty) return const SliverToBoxAdapter();
 
     return SliverToBoxAdapter(
       child: Container(
         color: bgColor,
-        margin: const EdgeInsets.symmetric(vertical: 0),
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        margin: EdgeInsets.symmetric(vertical: 0),
+        padding: EdgeInsets.symmetric(vertical: 10),
         child: Column(
           children: [
             // const SizedBox(height: 10),
@@ -35,10 +34,10 @@ class HorizontalProductComponent extends StatelessWidget {
             ),
             Container(
               height: 224,
-              margin: const EdgeInsets.only(top: 14, bottom: 0),
+              margin: EdgeInsets.only(top: 14, bottom: 0),
               child: ListView.separated(
                 physics: const BouncingScrollPhysics(),
-                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 0),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) =>
                     ProductCard(productModel: productList[index], width: 180),

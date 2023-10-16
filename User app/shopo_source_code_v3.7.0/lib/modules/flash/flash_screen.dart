@@ -38,7 +38,8 @@ class FlashScreen extends StatelessWidget {
                       fit: StackFit.expand,
                       children: [
                         CustomImage(
-                            path: RemoteUrls.imageUrl(state.flashModel.flashSale.flashsalePageImage),
+                            path: RemoteUrls.imageUrl(
+                                state.flashModel.flashSale.flashsalePageImage),
                             fit: BoxFit.fill),
                         Positioned(
                           right: 10.0,
@@ -100,8 +101,8 @@ class FlashScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: GridView.builder(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 20),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
@@ -138,7 +139,7 @@ class FlashCountDown extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.only(right: 10),
+          padding: EdgeInsets.only(right: 10),
           child: CircleAvatar(
             radius: 25,
             backgroundColor: Colors.white,

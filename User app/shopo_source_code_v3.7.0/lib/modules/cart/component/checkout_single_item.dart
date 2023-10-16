@@ -20,7 +20,7 @@ class CheckoutSingleItem extends StatelessWidget {
     final width = MediaQuery.of(context).size.width - 40;
 
     return Container(
-      margin: const EdgeInsets.only(bottom: 16),
+      margin: EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
         border: Border.all(color: borderColor),
@@ -58,7 +58,7 @@ class CheckoutSingleItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 8),
+                  padding: EdgeInsets.only(right: 8),
                   child: Text(
                     product.product.name,
                     maxLines: 2,
@@ -79,7 +79,7 @@ class CheckoutSingleItem extends StatelessWidget {
                           fontWeight: FontWeight.w600),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 8),
+                      padding: EdgeInsets.only(right: 8),
                       child: Text(
                         'x ${product.qty}',
                         style: const TextStyle(fontSize: 16),

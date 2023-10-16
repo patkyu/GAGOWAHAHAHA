@@ -24,7 +24,7 @@ class _SignUpFormState extends State<SignUpForm> {
     final appSettingBloc = context.read<AppSettingCubit>();
     final size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Column(
@@ -89,7 +89,7 @@ class _SignUpFormState extends State<SignUpForm> {
                         decoration: InputDecoration(
                           hintText: Language.phoneNumber.capitalizeByWord(),
                           prefixIcon: CountryCodePicker(
-                            padding: const EdgeInsets.only(bottom: 8),
+                            padding: EdgeInsets.only(bottom: 8),
                             onChanged: (country) {
                               bloc.add(
                                 SignUpEventCountryCode(
@@ -232,7 +232,7 @@ class _SignUpFormState extends State<SignUpForm> {
               },
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 5.0),
+              padding: EdgeInsets.only(bottom: 5.0),
               child: Text(
                 Language.signUpCondition.capitalizeByWord(),
                 style: TextStyle(color: blackColor.withOpacity(.5)),
@@ -256,7 +256,7 @@ class ErrorText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.symmetric(horizontal: 10),
       child: Text(
         text,
         style: Theme.of(context).textTheme.caption!.copyWith(

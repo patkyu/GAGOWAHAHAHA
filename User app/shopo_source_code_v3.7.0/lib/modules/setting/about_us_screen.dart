@@ -36,7 +36,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
           if (state is AboutUsStateLoaded) {
             final aboutInfo = state.aboutInfo;
             return ListView(
-              padding: const EdgeInsets.symmetric(vertical: 0),
+              padding: EdgeInsets.symmetric(vertical: 0),
               children: [
                 // Text(Language.aboutUs.capitalizeByWord(),
                 //     style: GoogleFonts.inter(
@@ -78,12 +78,12 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                           const Border(bottom: BorderSide(color: Colors.grey)),
                     ),
                     "th": Style(
-                      // padding: const EdgeInsets.all(6),
+                      // padding: EdgeInsets.all(6),
                       fontSize: FontSize.medium,
                       backgroundColor: Colors.grey,
                     ),
                     "td": Style(
-                      // padding: const EdgeInsets.all(6),
+                      // padding: EdgeInsets.all(6),
                       alignment: Alignment.topLeft,
                     ),
                     'h1': Style(
@@ -93,7 +93,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                       textOverflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.left,
                       fontSize: FontSize.xLarge,
-                      padding: EdgeInsets.zero,
+                      padding: HtmlPaddings.zero,
                     ),
                     'li': Style(
                         // color: Colors.green,
@@ -122,7 +122,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                     textAlign: TextAlign.center),
                 const SizedBox(height: 20.0),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  padding: EdgeInsets.symmetric(horizontal: 10.0),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
@@ -134,17 +134,17 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                           return Container(
                             height: 240.0,
                             width: 200.0,
-                            margin: const EdgeInsets.only(right: 20.0),
+                            margin: EdgeInsets.only(right: 20.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8.0),
                               border: Border.all(
                                   color: Utils.dynamicPrimaryColor(context)),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(
+                              padding: EdgeInsets.symmetric(
                                   horizontal: 8.0, vertical: 4),
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(
+                                padding: EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 10.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,7 +246,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
         Container(
           height: 40.0,
           width: 40.0,
-          margin: const EdgeInsets.only(bottom: 4.0),
+          margin: EdgeInsets.only(bottom: 4.0),
           alignment: Alignment.center,
           decoration: BoxDecoration(
             color: Utils.dynamicPrimaryColor(context),

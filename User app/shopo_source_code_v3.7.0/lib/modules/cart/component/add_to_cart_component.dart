@@ -93,7 +93,7 @@ class _AddToCartComponentState extends State<AddToCartComponent> {
     int value = widget.product.qty;
     return Container(
       height: height,
-      margin: const EdgeInsets.only(bottom: 16),
+      margin: EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
         border: Border.all(color: borderColor),
@@ -248,8 +248,7 @@ class _AddToCartComponentState extends State<AddToCartComponent> {
                           color: Utils.dynamicPrimaryColor(context)),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 9, vertical: 5),
+                      padding: EdgeInsets.symmetric(horizontal: 9, vertical: 5),
                       child: Text(
                         value.toString(),
                         style: const TextStyle(

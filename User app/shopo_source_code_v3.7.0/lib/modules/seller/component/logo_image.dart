@@ -27,7 +27,7 @@ class LogoImage extends StatelessWidget {
           children: [
             Container(
               height: 150.0,
-              margin: const EdgeInsets.only(top: 10.0, bottom: 6.0),
+              margin: EdgeInsets.only(top: 10.0, bottom: 6.0),
               width: 160.0,
               alignment: Alignment.center,
               decoration: const BoxDecoration(

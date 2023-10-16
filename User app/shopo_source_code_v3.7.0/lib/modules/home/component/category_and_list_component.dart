@@ -32,10 +32,10 @@ class CategoryAndListComponent extends StatelessWidget {
             ),
             Container(
               height: 150,
-              margin: const EdgeInsets.only(top: 14, bottom: 10),
+              margin: EdgeInsets.only(top: 14, bottom: 10),
               child: ListView.separated(
                 physics: const BouncingScrollPhysics(),
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) => HomeHorizontalListProductCard(
                   productModel: productList[index],

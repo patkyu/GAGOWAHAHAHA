@@ -28,7 +28,8 @@ class AllCategoryListScreen extends StatelessWidget {
               state is CategoryLoadedState) {
             final categories = context.read<CategoryCubit>().categoryList;
             if (categories.isEmpty) {
-              return  Center(child: Text(Language.noCategory.capitalizeByWord()));
+              return Center(
+                  child: Text(Language.noCategory.capitalizeByWord()));
             }
 
             return GridView.builder(
@@ -38,7 +39,7 @@ class AllCategoryListScreen extends StatelessWidget {
                 mainAxisSpacing: 0,
                 mainAxisExtent: 130,
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               itemCount: categories.length,
               itemBuilder: (context, index) {
                 return CategoryCircleCard(
@@ -51,7 +52,7 @@ class AllCategoryListScreen extends StatelessWidget {
               child: Text(state.errorMessage),
             );
           }
-          return  Center(
+          return Center(
             child: SizedBox(
               child: Text(Language.somethingWentWrong.capitalizeByWord()),
             ),

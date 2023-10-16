@@ -97,7 +97,7 @@ class ProductCard extends StatelessWidget {
     }
 
     return Container(
-      padding: const EdgeInsets.only(left: 10, right: 6),
+      padding: EdgeInsets.only(left: 10, right: 6),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -190,7 +190,7 @@ class ProductCard extends StatelessWidget {
       right: 0,
       child: Container(
         height: 22,
-        padding: const EdgeInsets.symmetric(horizontal: 5),
+        padding: EdgeInsets.symmetric(horizontal: 5),
         alignment: Alignment.center,
         decoration: BoxDecoration(
             color: Utils.dynamicPrimaryColor(context).withOpacity(0.6),

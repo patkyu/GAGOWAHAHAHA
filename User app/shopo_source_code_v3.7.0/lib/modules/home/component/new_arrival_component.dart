@@ -18,10 +18,15 @@ class NewArrivalComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       sliver: MultiSliver(
         children: [
-           SliverToBoxAdapter(child: Text(sectionTitle, style: const TextStyle(fontSize: 18, height: 1.5, fontWeight: FontWeight.w600),)),
+          SliverToBoxAdapter(
+              child: Text(
+            sectionTitle,
+            style: const TextStyle(
+                fontSize: 18, height: 1.5, fontWeight: FontWeight.w600),
+          )),
           const SliverToBoxAdapter(child: SizedBox(height: 15)),
           SliverGrid(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -71,9 +76,10 @@ class _NewArrivalHeaderState extends State<_NewArrivalHeader> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-         Text(
+        Text(
           widget.title,
-          style: const TextStyle(fontSize: 18, height: 1.5, fontWeight: FontWeight.w600),
+          style: const TextStyle(
+              fontSize: 18, height: 1.5, fontWeight: FontWeight.w600),
         ),
         CustomPopupMenu(
           pressType: PressType.singleClick,
@@ -113,7 +119,7 @@ class MenuItemListComponent extends StatelessWidget {
         width: 175,
         height: 280,
         alignment: Alignment.topLeft,
-        padding: const EdgeInsets.only(left: 12),
+        padding: EdgeInsets.only(left: 12),
         child: ListView(
           shrinkWrap: true,
           padding: EdgeInsets.zero,
@@ -124,7 +130,7 @@ class MenuItemListComponent extends StatelessWidget {
                     controller.hideMenu();
                   },
                   child: Padding(
-                    padding: const EdgeInsets.all(8),
+                    padding: EdgeInsets.all(8),
                     child: Text(
                       e,
                       style: const TextStyle(fontSize: 16),

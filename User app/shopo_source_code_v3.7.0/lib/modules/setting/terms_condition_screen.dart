@@ -22,7 +22,7 @@ class TermsConditionScreen extends StatelessWidget {
           if (state is TermConditionCubitStateLoaded) {
             final termsAndCondition = state.privacyPolicyAndTermConditionModel;
             return ListView(
-              padding: const EdgeInsets.all(20),
+              padding: EdgeInsets.all(20),
               children: [
                 Html(
                   data: termsAndCondition.termsAndCondition,
@@ -36,11 +36,11 @@ class TermsConditionScreen extends StatelessWidget {
                           const Border(bottom: BorderSide(color: Colors.grey)),
                     ),
                     "th": Style(
-                      padding: const EdgeInsets.all(6),
+                      padding: HtmlPaddings.all(6),
                       backgroundColor: Colors.grey,
                     ),
                     "td": Style(
-                      padding: const EdgeInsets.all(6),
+                      padding: HtmlPaddings.all(6),
                       alignment: Alignment.topLeft,
                     ),
                     'h':

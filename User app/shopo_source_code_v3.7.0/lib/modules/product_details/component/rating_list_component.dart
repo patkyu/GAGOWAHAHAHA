@@ -17,7 +17,7 @@ class ReviewListComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
           _buildRatingHeader(),
@@ -29,14 +29,14 @@ class ReviewListComponent extends StatelessWidget {
               .toList(),
           if (productReviews.length > 3)
             Container(
-              margin: const EdgeInsets.only(bottom: 20),
+              margin: EdgeInsets.only(bottom: 20),
               child: InkWell(
                 onTap: () {
                   // Navigator.pushNamed(context, RouteNames.reviewListScreen,
                   //     arguments: productReviews);
                 },
-                child:  Text(
-                 Language.seeAllReview,
+                child: Text(
+                  Language.seeAllReview,
                   style: const TextStyle(color: redColor),
                 ),
               ),
@@ -48,7 +48,7 @@ class ReviewListComponent extends StatelessWidget {
 
   Widget _buildRatingHeader() {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.symmetric(vertical: 20),
       child: Row(
         children: [
           Text(
@@ -67,7 +67,7 @@ class ReviewListComponent extends StatelessWidget {
                 ignoreGestures: true,
                 itemCount: 5,
                 itemSize: 20,
-                itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
                 itemBuilder: (context, _) => const Icon(
                   Icons.star,
                   color: Colors.amber,

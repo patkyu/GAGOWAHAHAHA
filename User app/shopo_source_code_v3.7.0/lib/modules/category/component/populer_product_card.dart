@@ -26,7 +26,7 @@ class PopulerProductCard extends StatelessWidget {
       },
       child: Container(
         height: height,
-        margin: const EdgeInsets.symmetric(vertical: 8),
+        margin: EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),
           border: Border.all(color: borderColor),
@@ -74,7 +74,7 @@ class PopulerProductCard extends StatelessWidget {
   Widget _buildContent(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: EdgeInsets.symmetric(vertical: 8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -90,7 +90,7 @@ class PopulerProductCard extends StatelessWidget {
               glow: true,
               glowColor: Utils.dynamicPrimaryColor(context),
               tapOnlyMode: true,
-              itemPadding: const EdgeInsets.symmetric(horizontal: 0.0),
+              itemPadding: EdgeInsets.symmetric(horizontal: 0.0),
               itemBuilder: (context, _) => const Icon(
                 Icons.star,
                 color: Color(0xffF6D060),

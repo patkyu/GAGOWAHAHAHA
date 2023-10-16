@@ -40,7 +40,7 @@ class DeliveryManRegistrationScreen extends StatelessWidget {
           }
         },
         child: ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          padding: EdgeInsets.symmetric(horizontal: 20.0),
           physics: const BouncingScrollPhysics(),
           children: [
             const DeliveryManImage(),

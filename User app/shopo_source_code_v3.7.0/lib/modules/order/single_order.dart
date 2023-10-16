@@ -65,8 +65,8 @@ class LoadedList extends StatelessWidget {
       slivers: [
         SliverToBoxAdapter(
           child: Container(
-            margin: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
-            padding: const EdgeInsets.all(14),
+            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+            padding: EdgeInsets.all(14),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6),
               color: cardBgGreyColor,
@@ -76,7 +76,6 @@ class LoadedList extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-
                 Align(
                   alignment: Alignment.centerRight,
                   child: Text(
@@ -85,7 +84,6 @@ class LoadedList extends StatelessWidget {
                     style: const TextStyle(color: Color(0xff85959E)),
                   ),
                 ),
-
                 ...List.generate(
                   singleOrder!.orderProducts.length,
                   (index) => Column(
@@ -114,8 +112,9 @@ class LoadedList extends StatelessWidget {
                     Utils.orderStatus("${singleOrder!.orderStatus}"),
                     style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        color:
-                            "${singleOrder!.orderStatus}" == '4' ? redColor : greenColor),
+                        color: "${singleOrder!.orderStatus}" == '4'
+                            ? redColor
+                            : greenColor),
                   ),
                 )
               ],

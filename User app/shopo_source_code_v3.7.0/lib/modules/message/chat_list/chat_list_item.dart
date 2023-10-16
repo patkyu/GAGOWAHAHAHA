@@ -23,7 +23,7 @@ class ChatListItem extends StatelessWidget {
       leading: DottedBorder(
         borderType: BorderType.Circle,
         color: Utils.dynamicPrimaryColor(context),
-        padding: const EdgeInsets.all(8),
+        padding: EdgeInsets.all(8),
         dashPattern: const [6, 3],
         child: CircleAvatar(
           backgroundColor: primaryColor,

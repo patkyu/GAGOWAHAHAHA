@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import '../../core/router_name.dart';
 import '../../widgets/primary_button.dart';
 import '../../widgets/rounded_app_bar.dart';
@@ -13,7 +13,7 @@ class PaymentsScreen extends StatelessWidget {
     return Scaffold(
       appBar: RoundedAppBar(titleText: 'Payments'),
       body: ListView(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.all(20),
         children: [
           const Text("Payment Method", style: headerStyle),
           const Padding(

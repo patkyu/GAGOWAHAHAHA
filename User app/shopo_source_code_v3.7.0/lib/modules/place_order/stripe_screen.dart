@@ -131,7 +131,7 @@ class _StripeScreenState extends State<StripeScreen> {
                 onCreditCardModelChange: onCreditCardModelChange,
               ),
               Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(20.0),
                 child: PrimaryButton(
                   text: "Pay",
                   onPressed: () {

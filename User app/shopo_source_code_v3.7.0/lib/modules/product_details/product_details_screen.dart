@@ -157,7 +157,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
 
   Widget _buildBottomButtons(ProductDetailsModel productDetailsModel) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -191,8 +191,8 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               child: Container(
                 height: 50,
                 width: 50,
-                padding: const EdgeInsets.all(12),
-                margin: const EdgeInsets.only(right: 10),
+                padding: EdgeInsets.all(12),
+                margin: EdgeInsets.only(right: 10),
                 decoration: BoxDecoration(
                   color: borderColor,
                   borderRadius: BorderRadius.circular(0),
@@ -211,7 +211,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
             child: Container(
               height: 50,
               width: 50,
-              padding: const EdgeInsets.all(12),
+              padding: EdgeInsets.all(12),
               decoration: BoxDecoration(
                 color: borderColor,
                 borderRadius: BorderRadius.circular(0),

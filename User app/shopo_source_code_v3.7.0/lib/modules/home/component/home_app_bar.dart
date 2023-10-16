@@ -26,7 +26,7 @@ class HomeAppBar extends StatelessWidget {
       child: Container(
         // height: height,
         color: const Color(0xffF6F6F6),
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           children: [
             Row(
@@ -100,7 +100,7 @@ class _LocationSelectorState extends State<LocationSelector> {
         const SizedBox(width: 8),
         DropdownButton<String>(
             icon: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               child: SvgPicture.asset(Kimages.expandIcon, height: 8),
             ),
             underline: const SizedBox(),

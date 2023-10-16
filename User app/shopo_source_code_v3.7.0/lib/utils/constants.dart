@@ -27,7 +27,7 @@ final _borderRadius = BorderRadius.circular(4);
 
 var inputDecorationTheme = InputDecoration(
   isDense: true,
-  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+  contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
   hintStyle: const TextStyle(fontSize: 18, height: 1.667),
   border: OutlineInputBorder(
     borderRadius: _borderRadius,

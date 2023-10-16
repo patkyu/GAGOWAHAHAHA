@@ -29,7 +29,7 @@ class DisplayProductCard extends StatelessWidget {
           color: Colors.black.withOpacity(0.2),
         )
       ]),
-      margin: const EdgeInsets.symmetric(horizontal: 20),
+      margin: EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -37,7 +37,7 @@ class DisplayProductCard extends StatelessWidget {
           Container(
               height: 100,
               width: 100,
-              margin: const EdgeInsets.all(8),
+              margin: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
                 color: Colors.white,

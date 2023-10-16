@@ -15,7 +15,7 @@ class GuestButton extends StatelessWidget {
         Navigator.pushNamedAndRemoveUntil(
             context, RouteNames.mainPage, (route) => false);
       },
-      child:  Text(
+      child: Text(
         Language.continueAsGuest.capitalizeByWord(),
         style: const TextStyle(
           fontSize: 16,
@@ -27,7 +27,7 @@ class GuestButton extends StatelessWidget {
       ),
 
       // style: OutlinedButton.styleFrom(
-      //   padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+      //   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
       //   minimumSize: const Size(200, 44),
       //   shape: RoundedRectangleBorder(
       //     borderRadius: BorderRadius.circular(4),

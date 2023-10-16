@@ -30,7 +30,7 @@ class _ProfileEditScreenState extends State<ProfileEditScreen> {
             return Center(child: Text(state.message));
           } else if (state is UpdatedLoaded) {
             return SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
+              padding: EdgeInsets.fromLTRB(20, 8, 20, 20),
               child: ProfileEditForm(userData: state.updatedInfo),
             );
           }

@@ -50,7 +50,7 @@ class AddNewPaymentCardScreenState extends State<AddNewPaymentCardScreen> {
                   },
                 ),
                 itemCount: 6,
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: 20),
               ),
             ),
             const SizedBox(height: 22),
@@ -63,7 +63,7 @@ class AddNewPaymentCardScreenState extends State<AddNewPaymentCardScreen> {
 
   Widget _buildPaymentForm() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

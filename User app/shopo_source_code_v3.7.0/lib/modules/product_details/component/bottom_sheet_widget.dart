@@ -54,7 +54,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
   Widget build(BuildContext context) {
     final isExist = context.read<CartCubit>();
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: EdgeInsets.all(16.0),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -66,7 +66,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
             color: const Color(0xffD9D9D9),
             height: 1,
             width: double.infinity,
-            margin: const EdgeInsets.only(bottom: 15),
+            margin: EdgeInsets.only(bottom: 15),
           ),
 
           _VariantItemsWidget(
@@ -87,7 +87,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(right: 20),
+                padding: EdgeInsets.only(right: 20),
                 child: Text(
                   Language.quantity.capitalizeByWord(),
                   style: const TextStyle(
@@ -108,7 +108,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9),
+                padding: EdgeInsets.symmetric(horizontal: 9),
                 child: Text(
                   quantity.toString(),
                   style: const TextStyle(
@@ -286,7 +286,7 @@ class _VariantItemsWidget extends StatelessWidget {
 
   Widget _buildSingleVariant(ActiveVariantModel singleVariant) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
+      padding: EdgeInsets.only(bottom: 8),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -328,8 +328,8 @@ class _VariantItemsWidget extends StatelessWidget {
     return InkWell(
       onTap: () => onChange(variant),
       child: Container(
-        margin: const EdgeInsets.all(2),
-        padding: const EdgeInsets.all(4),
+        margin: EdgeInsets.all(2),
+        padding: EdgeInsets.all(4),
         decoration: BoxDecoration(
           color: variantItems.contains(variant) ? redColor : null,
           borderRadius: BorderRadius.circular(3),

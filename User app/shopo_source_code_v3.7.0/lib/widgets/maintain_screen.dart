@@ -21,16 +21,19 @@ class MaintainScreen extends StatelessWidget {
           } else if (state is AppSettingStateLoaded) {
             final result = state.settingModel.maintainTextModel;
             return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: EdgeInsets.symmetric(horizontal: 10),
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CustomImage(path: RemoteUrls.imageUrl(state.settingModel.maintainTextModel!.image)),
+                    CustomImage(
+                        path: RemoteUrls.imageUrl(
+                            state.settingModel.maintainTextModel!.image)),
                     const SizedBox(height: 20.0),
                     Text(
                       result!.description,
-                      style: GoogleFonts.jost(fontSize: 18.0, color: blackColor),
+                      style:
+                          GoogleFonts.jost(fontSize: 18.0, color: blackColor),
                       textAlign: TextAlign.center,
                     ),
                   ],

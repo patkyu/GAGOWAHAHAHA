@@ -48,7 +48,7 @@ class ProductSearchScreenState extends State<ProductSearchScreen> {
     return Scaffold(
       appBar: SearchAppBar(
         titleWidget: Container(
-          margin: const EdgeInsets.only(right: 20),
+          margin: EdgeInsets.only(right: 20),
           height: 40,
           child: TextFormField(
             controller: searchCtr,
@@ -97,7 +97,7 @@ class ProductSearchScreenState extends State<ProductSearchScreen> {
               Expanded(
                 child: GridView.builder(
                   controller: _controller,
-                  padding: const EdgeInsets.all(15),
+                  padding: EdgeInsets.all(15),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 16,
@@ -112,7 +112,7 @@ class ProductSearchScreenState extends State<ProductSearchScreen> {
               ),
               if (state is SearchStateLoadMore)
                 Container(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10),
                     child: const CircularProgressIndicator()),
             ],
           );

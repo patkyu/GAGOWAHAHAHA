@@ -16,9 +16,9 @@ class SingleOfferBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 15),
+      margin: EdgeInsets.symmetric(horizontal: 15),
       width: MediaQuery.of(context).size.width,
-      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12),
+      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 12),
       decoration: BoxDecoration(
         image: DecorationImage(
             image: NetworkImage(

@@ -84,7 +84,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   SliverPadding _buildProfileOptions(BuildContext context) {
     final loginBloc = context.read<LoginBloc>();
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
       sliver: SliverList(
         delegate: SliverChildListDelegate(
           [

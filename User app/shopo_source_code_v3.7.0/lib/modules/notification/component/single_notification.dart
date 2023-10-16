@@ -16,7 +16,7 @@ class SingleNofitication extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: color,
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

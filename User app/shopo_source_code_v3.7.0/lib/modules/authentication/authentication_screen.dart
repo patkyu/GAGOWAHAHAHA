@@ -157,7 +157,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
 
   Widget _buildHeader() {
     return AnimatedContainer(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       alignment: Alignment.topLeft,
       duration: kDuration,
       child: Text(
@@ -172,7 +172,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
   Widget _buildTabText() {
     const tabUnSelectedColor = Color(0xff797979);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: [
           InkWell(
@@ -192,7 +192,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
             color: borderColor,
             width: 1,
             height: 20,
-            margin: const EdgeInsets.symmetric(horizontal: 16),
+            margin: EdgeInsets.symmetric(horizontal: 16),
           ),
           InkWell(
             onTap: () {

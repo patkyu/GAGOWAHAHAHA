@@ -64,7 +64,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(top: 20, bottom: 10),
+          padding: EdgeInsets.only(top: 20, bottom: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -80,7 +80,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   Widget _buildBottomContent() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Column(
         children: [
           AnimatedSwitcher(
@@ -149,7 +149,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           },
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 10.0),
+              padding: EdgeInsets.only(bottom: 10.0),
               child: Text(
                 Language.next.capitalizeByWord(),
                 style: const TextStyle(color: Colors.black, fontSize: 18.0),

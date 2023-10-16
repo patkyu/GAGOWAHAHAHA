@@ -34,7 +34,7 @@ class _ShippingMethodListState extends State<ShippingMethodList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -48,7 +48,7 @@ class _ShippingMethodListState extends State<ShippingMethodList> {
             (e) {
               final isSelected = e == shippingMethodModel;
               return Container(
-                margin: const EdgeInsets.only(bottom: 8),
+                margin: EdgeInsets.only(bottom: 8),
                 decoration: BoxDecoration(
                     border: Border.all(
                         color: isSelected

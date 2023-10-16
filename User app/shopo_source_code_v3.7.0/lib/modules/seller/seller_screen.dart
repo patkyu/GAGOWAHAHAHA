@@ -68,7 +68,7 @@ class SingleSellerInfo extends StatelessWidget {
         Container(
             height: 130.0,
             width: double.infinity,
-            margin: const EdgeInsets.symmetric(horizontal: 0.0),
+            margin: EdgeInsets.symmetric(horizontal: 0.0),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10.0),
               child: CustomImage(
@@ -77,8 +77,7 @@ class SingleSellerInfo extends StatelessWidget {
             )),
         Positioned.fill(
           child: Padding(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
+            padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -132,7 +131,7 @@ class SingleSellerInfo extends StatelessWidget {
     return Row(
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 6.0, right: 10.0),
+          padding: EdgeInsets.only(top: 6.0, right: 10.0),
           child: Icon(
             icon,
             size: 20.0,
@@ -155,7 +154,7 @@ class SellerProduct extends StatelessWidget {
     return CustomScrollView(
       slivers: [
         SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           sliver: MultiSliver(
             children: [
               SliverToBoxAdapter(

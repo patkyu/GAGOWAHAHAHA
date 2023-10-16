@@ -27,9 +27,7 @@ class _SetPasswordScreenState extends State<SetPasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery
-        .of(context)
-        .size;
+    final size = MediaQuery.of(context).size;
     final bloc = context.read<ForgotPasswordCubit>();
     return BlocListener<ForgotPasswordCubit, ForgotPasswordState>(
       listener: (context, state) {
@@ -43,7 +41,7 @@ class _SetPasswordScreenState extends State<SetPasswordScreen> {
       child: Scaffold(
         body: SafeArea(
           child: Container(
-            padding: const EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
             width: size.width,
             height: size.height,
             decoration: const BoxDecoration(
@@ -169,8 +167,8 @@ class _SetPasswordScreenState extends State<SetPasswordScreen> {
                 ),
               ),
             ),
-            if(state is ForgotPasswordFormValidateError)...[
-              if(state.errors.password.isNotEmpty)
+            if (state is ForgotPasswordFormValidateError) ...[
+              if (state.errors.password.isNotEmpty)
                 ErrorText(text: state.errors.password.first)
             ]
           ],
@@ -204,8 +202,8 @@ class _SetPasswordScreenState extends State<SetPasswordScreen> {
                 ),
               ),
             ),
-            if(state is ForgotPasswordFormValidateError)...[
-              if(state.errors.password.isNotEmpty)
+            if (state is ForgotPasswordFormValidateError) ...[
+              if (state.errors.password.isNotEmpty)
                 ErrorText(text: state.errors.password.first)
             ]
           ],

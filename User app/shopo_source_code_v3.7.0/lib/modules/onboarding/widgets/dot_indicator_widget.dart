@@ -28,7 +28,7 @@ class DotIndicatiorWidget extends StatelessWidget {
   Widget _singleDot(bool isActive, BuildContext context) {
     return AnimatedContainer(
       duration: kDuration,
-      margin: const EdgeInsets.only(right: 5),
+      margin: EdgeInsets.only(right: 5),
       height: 10.0,
       width: 10.0,
       decoration: BoxDecoration(

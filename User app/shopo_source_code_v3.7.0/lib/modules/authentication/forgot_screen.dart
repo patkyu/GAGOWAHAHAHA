@@ -37,7 +37,7 @@ class _ForgotScreenState extends State<ForgotScreen> {
       child: Scaffold(
         body: SafeArea(
           child: Container(
-            padding: const EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
             width: size.width,
             height: size.height,
             decoration: const BoxDecoration(

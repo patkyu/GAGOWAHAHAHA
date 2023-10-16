@@ -11,7 +11,7 @@ class FeedbackSuccess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 30),
+      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,

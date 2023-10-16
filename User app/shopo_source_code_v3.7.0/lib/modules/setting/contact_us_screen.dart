@@ -69,7 +69,7 @@ class _ContactUsCondentWidgetState extends State<ContactUsCondentWidget> {
           );
         } else if (state is ContactUsStateError) {
           return Padding(
-            padding: const EdgeInsets.all(18.0),
+            padding: EdgeInsets.all(18.0),
             child: Center(
               child: Text(
                 state.errorMessage,

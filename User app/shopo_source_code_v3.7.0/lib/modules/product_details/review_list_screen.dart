@@ -16,7 +16,7 @@ class SeelAllReviewsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('View all review')),
       body: ListView.builder(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.all(20),
         itemBuilder: (context, index) {
           return SingleReviewCardComponent(productReviews[index]);
         },

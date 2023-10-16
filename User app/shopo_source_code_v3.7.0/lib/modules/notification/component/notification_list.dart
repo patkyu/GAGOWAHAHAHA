@@ -12,7 +12,7 @@ class NotificationList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      padding: const EdgeInsets.symmetric(vertical: 12),
+      padding: EdgeInsets.symmetric(vertical: 12),
       itemCount: notificationList.length,
       itemBuilder: (context, index) {
         final item = notificationList[index];

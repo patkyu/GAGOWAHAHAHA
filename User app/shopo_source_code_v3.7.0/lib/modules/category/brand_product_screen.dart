@@ -38,7 +38,8 @@ class _SingleCategoryProductScreenState extends State<BrandProductScreen> {
               return const Center(child: CircularProgressIndicator());
             } else if (state is CategoryLoadedState) {
               if (state.categoryProducts.isEmpty) {
-                return  Center(child: Text(Language.noItemsFound.capitalizeByWord()));
+                return Center(
+                    child: Text(Language.noItemsFound.capitalizeByWord()));
               }
               // _buildProductGrid(state.productCategoriesModel.products);
               return const CategoryLoad();
@@ -47,7 +48,7 @@ class _SingleCategoryProductScreenState extends State<BrandProductScreen> {
                 child: Text(state.errorMessage),
               );
             }
-            return  Center(
+            return Center(
               child: SizedBox(
                 child: Text(Language.somethingWentWrong),
               ),
@@ -67,7 +68,7 @@ class CategoryLoad extends StatelessWidget {
     final brandProducts = context.read<CategoryCubit>().brandProducts;
     return CustomScrollView(slivers: [
       SliverPadding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         sliver: MultiSliver(
           children: [
             const SizedBox(height: 10),

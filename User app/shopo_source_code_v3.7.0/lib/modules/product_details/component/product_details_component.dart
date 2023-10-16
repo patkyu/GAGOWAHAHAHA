@@ -79,7 +79,7 @@ class ProductDetailsComponent extends StatelessWidget {
         ? '${product.qty} ${Language.productsAvailable}'
         : Language.stockOut;
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -147,7 +147,7 @@ class ProductDetailsComponent extends StatelessWidget {
           ignoreGestures: true,
           itemCount: 5,
           itemSize: 15,
-          itemPadding: const EdgeInsets.symmetric(horizontal: 2.0),
+          itemPadding: EdgeInsets.symmetric(horizontal: 2.0),
           itemBuilder: (context, _) => const Icon(
             Icons.star,
             color: Colors.amber,
@@ -156,7 +156,7 @@ class ProductDetailsComponent extends StatelessWidget {
         ),
         Container(
             width: 1,
-            margin: const EdgeInsets.symmetric(horizontal: 6),
+            margin: EdgeInsets.symmetric(horizontal: 6),
             height: 24,
             color: borderColor),
         Text(

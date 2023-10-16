@@ -13,7 +13,7 @@ class EmptyOrderComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
+        padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
         child: Column(
           children: [
             const CustomImage(path: Kimages.emptyOrder),
@@ -24,10 +24,11 @@ class EmptyOrderComponent extends StatelessWidget {
                   fontSize: 22, fontWeight: FontWeight.bold, height: 2),
             ),
             const SizedBox(height: 9),
-             Text(
-             Language.noCartItem.capitalizeByWord() ,
+            Text(
+              Language.noCartItem.capitalizeByWord(),
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 16, color: iconGreyColor, height: 1.5),
+              style: const TextStyle(
+                  fontSize: 16, color: iconGreyColor, height: 1.5),
             ),
             const SizedBox(height: 30),
             // SizedBox(

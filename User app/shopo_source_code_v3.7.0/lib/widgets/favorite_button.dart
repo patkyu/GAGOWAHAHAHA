@@ -96,12 +96,12 @@ class _FavoriteButtonState extends State<FavoriteButton> {
             height: height,
             width: height,
             alignment: Alignment.center,
-            // margin: const EdgeInsets.only(top: 10.0, left: 10.0),
+            // margin: EdgeInsets.only(top: 10.0, left: 10.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4.0),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(4.0),
+              padding: EdgeInsets.all(4.0),
               child: Icon(
                 isFav ? Icons.favorite : Icons.favorite_border,
                 color: Colors.black87,
@@ -118,12 +118,11 @@ Widget favorite() {
   return Container(
     height: 40.0,
     width: 40.0,
-    margin: const EdgeInsets.only(top: 10.0, left: 10.0),
+    margin: EdgeInsets.only(top: 10.0, left: 10.0),
     alignment: Alignment.center,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(4.0),
     ),
-    child:  Icon(Icons.favorite_outline_sharp,
-        color: primaryColor, size: 28.0),
+    child: Icon(Icons.favorite_outline_sharp, color: primaryColor, size: 28.0),
   );
 }

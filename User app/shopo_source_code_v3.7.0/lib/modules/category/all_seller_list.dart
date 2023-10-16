@@ -27,7 +27,7 @@ class AllSellerList extends StatelessWidget {
           mainAxisSpacing: 0,
           mainAxisExtent: 130,
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         itemCount: sellers.length,
         itemBuilder: (context, index) {
           return SingleCircularSeller(

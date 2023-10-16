@@ -51,7 +51,7 @@ class _ToggleButtonComponentState extends State<ToggleButtonComponent> {
           widget.onChange(initialLabelIndex);
         }),
         child: Container(
-          padding: const EdgeInsets.only(bottom: 10),
+          padding: EdgeInsets.only(bottom: 10),
           alignment: Alignment.center,
           decoration: BoxDecoration(
             border: Border(
@@ -76,7 +76,7 @@ class _ToggleButtonComponentState extends State<ToggleButtonComponent> {
   Widget build(BuildContext context) {
     return Container(
       height: 36,
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       child: IntrinsicHeight(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,

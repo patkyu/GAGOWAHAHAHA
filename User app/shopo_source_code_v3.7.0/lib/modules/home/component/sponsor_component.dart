@@ -19,14 +19,14 @@ class SponsorComponent extends StatelessWidget {
     if (brands.isEmpty) return const SizedBox();
     return Container(
       height: 70,
-      margin: const EdgeInsets.only(bottom: 0),
-      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+      margin: EdgeInsets.only(bottom: 0),
+      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
       decoration: BoxDecoration(
         color: Utils.dynamicPrimaryColor(context).withOpacity(0.1),
         borderRadius: BorderRadius.circular(4),
       ),
       child: ListView.separated(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: EdgeInsets.symmetric(horizontal: 10),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => InkWell(
           onTap: () {
@@ -37,7 +37,7 @@ class SponsorComponent extends StatelessWidget {
             );
           },
           child: Padding(
-            padding: const EdgeInsets.only(right: 24),
+            padding: EdgeInsets.only(right: 24),
             child: CustomImage(
               path: RemoteUrls.imageUrl(brands[index].logo),
               height: 56,

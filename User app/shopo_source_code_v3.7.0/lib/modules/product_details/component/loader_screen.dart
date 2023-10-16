@@ -13,10 +13,10 @@ class DetailsPageLoading extends StatelessWidget {
       slivers: [
         SliverAppBar(
           backgroundColor: borderColor.withOpacity(.2),
-          title:  Text(Language.productDetails.capitalizeByWord()),
+          title: Text(Language.productDetails.capitalizeByWord()),
         ),
         SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           sliver: SliverToBoxAdapter(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,8 +56,8 @@ class DetailsPageLoading extends StatelessWidget {
                       4,
                       (index) => Column(
                         children: const [
-                           SizedBox(height: 10),
-                           SizedBox(
+                          SizedBox(height: 10),
+                          SizedBox(
                             child: ShimmerLoader(
                               height: 10,
                               width: double.infinity,
@@ -69,8 +69,8 @@ class DetailsPageLoading extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 30),
-                 Text(Language.relatedProduct.capitalizeByWord()),
-                 SizedBox(
+                Text(Language.relatedProduct.capitalizeByWord()),
+                SizedBox(
                   height: 200,
                   width: double.infinity,
                   child: SingleChildScrollView(
@@ -80,7 +80,7 @@ class DetailsPageLoading extends StatelessWidget {
                         ...List.generate(
                           4,
                           (index) => Container(
-                            margin: const EdgeInsets.only(right: 10),
+                            margin: EdgeInsets.only(right: 10),
                             child: const ShimmerLoader(
                               height: 150,
                               width: 150,

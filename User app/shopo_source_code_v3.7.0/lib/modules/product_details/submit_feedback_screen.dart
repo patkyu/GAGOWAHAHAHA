@@ -64,12 +64,12 @@ class _SubmitFeedBackScreenState extends State<SubmitFeedBackScreen> {
           textColor: blackColor,
         ),
         body: SingleChildScrollView(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           child: Column(
             children: [
               // FeedbackProductCard(product: populerProductList.first),
               Container(
-                padding: const EdgeInsets.all(15),
+                padding: EdgeInsets.all(15),
                 decoration: BoxDecoration(
                   // color: bgGreyColor,
                   borderRadius: BorderRadius.circular(4),
@@ -126,7 +126,7 @@ class _SubmitFeedBackScreenState extends State<SubmitFeedBackScreen> {
                 allowHalfRating: true,
                 itemCount: 5,
                 itemSize: 28,
-                itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
                 itemBuilder: (context, _) => const Icon(
                   Icons.star,
                   color: redColor,

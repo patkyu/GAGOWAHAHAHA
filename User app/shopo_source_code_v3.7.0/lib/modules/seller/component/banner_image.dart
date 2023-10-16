@@ -26,7 +26,7 @@ class BannerImage extends StatelessWidget {
           children: [
             Container(
               height: 150.0,
-              margin: const EdgeInsets.only(top: 14.0, bottom: 6.0),
+              margin: EdgeInsets.only(top: 14.0, bottom: 6.0),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: const Color(0XFFEBEBEB),

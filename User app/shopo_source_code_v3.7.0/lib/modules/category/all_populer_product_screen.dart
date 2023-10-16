@@ -79,8 +79,7 @@ class _AllPopularProductScreenState extends State<AllPopularProductScreen> {
               scrollOffset: 100,
               child: ListView.builder(
                 // controller: scrollController,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 itemCount: state.highlightedProducts.length,
                 itemBuilder: (context, index) => PopulerProductCard(
                     productModel: state.highlightedProducts[index]),
@@ -95,7 +94,7 @@ class _AllPopularProductScreenState extends State<AllPopularProductScreen> {
           if (state is ProductsStateMoreDataLoading) {
             return Container(
               height: 60,
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: EdgeInsets.symmetric(vertical: 10),
               child: const Center(
                 child: CircularProgressIndicator(),
               ),

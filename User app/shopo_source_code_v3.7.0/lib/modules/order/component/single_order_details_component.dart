@@ -21,7 +21,7 @@ class SingleOrderDetailsComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 14, left: 14),
+      padding: EdgeInsets.only(bottom: 14, left: 14),
       child: InkWell(
         onTap: () {
           // Navigator.pushNamed(context, RouteNames.productDetailsScreen,
@@ -55,7 +55,7 @@ class SingleOrderDetailsComponent extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(Utils.formatPrice(orderItem.unitPrice,context)),
+                      Text(Utils.formatPrice(orderItem.unitPrice, context)),
                       if (isOrdered)
                         InkWell(
                           onTap: () {
@@ -63,7 +63,7 @@ class SingleOrderDetailsComponent extends StatelessWidget {
                                 context, RouteNames.submitFeedBackScreen,
                                 arguments: orderItem);
                           },
-                          child:  Text(
+                          child: Text(
                             Language.reviews.capitalizeByWord(),
                             style: const TextStyle(color: redColor),
                           ),

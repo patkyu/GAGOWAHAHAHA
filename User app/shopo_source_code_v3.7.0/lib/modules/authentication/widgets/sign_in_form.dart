@@ -24,7 +24,7 @@ class _SignInFormState extends State<SignInForm> {
   Widget build(BuildContext context) {
     final loginBloc = context.read<LoginBloc>();
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Form(
         key: loginBloc.formKey,
         child: Column(
@@ -118,7 +118,7 @@ class _SignInFormState extends State<SignInForm> {
                     color: textGreyColor,
                     width: double.infinity,
                     height: 1,
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
+                    margin: EdgeInsets.symmetric(horizontal: 10),
                   ),
                 ),
                 const Text(
@@ -134,7 +134,7 @@ class _SignInFormState extends State<SignInForm> {
                     color: textGreyColor,
                     width: double.infinity,
                     height: 1,
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
+                    margin: EdgeInsets.symmetric(horizontal: 10),
                   ),
                 ),
               ],
@@ -205,7 +205,7 @@ class _SignInFormState extends State<SignInForm> {
                   },
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 5.0),
+                  padding: EdgeInsets.only(bottom: 5.0),
                   child: Text(
                     Language.rememberMe.capitalizeByWord(),
                     style: TextStyle(color: blackColor.withOpacity(.5)),

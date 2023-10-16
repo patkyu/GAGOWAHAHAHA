@@ -42,7 +42,7 @@ class DeliveryManImage extends StatelessWidget {
           child: Stack(
             children: [
               Padding(
-                padding: const EdgeInsets.all(4.0),
+                padding: EdgeInsets.all(4.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100.0),
                   child: CustomImage(

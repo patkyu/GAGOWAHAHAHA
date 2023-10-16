@@ -34,7 +34,7 @@ class PanelCollapseComponent extends StatelessWidget {
       decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Column(
         children: [
           Container(
@@ -111,7 +111,7 @@ class _PanelComponentState extends State<PanelComponent> {
         context.read<AppSettingCubit>().settingModel!.setting.currencyIcon;
     return ListView(
       controller: widget.controller,
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       children: [
         Text(Language.applyCoupon.capitalizeByWord()),
         const SizedBox(height: 8),
@@ -207,7 +207,7 @@ class _PanelComponentState extends State<PanelComponent> {
       controller: textController,
       decoration: InputDecoration(
         hintText: Language.promoCode.capitalizeByWord(),
-        // contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+        // contentPadding: EdgeInsets.symmetric(horizontal: 8),
         isDense: true,
         suffixIconConstraints:
             const BoxConstraints(maxHeight: 55, maxWidth: 85),

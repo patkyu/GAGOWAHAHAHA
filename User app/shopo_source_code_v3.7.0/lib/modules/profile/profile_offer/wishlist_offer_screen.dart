@@ -63,7 +63,7 @@ class _WishlistOfferScreenState extends State<WishlistOfferScreen> {
       bottomNavigationBar: Container(
         height: 60,
         color: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20),
         alignment: Alignment.centerRight,
         child: TextButton(
           style: TextButton.styleFrom(foregroundColor: redColor),
@@ -105,7 +105,7 @@ class __LoadedWidgetState extends State<_LoadedWidget> {
       children: [
         const SizedBox(height: 20),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             children: [
               const Icon(Icons.favorite, color: redColor),
@@ -121,7 +121,7 @@ class __LoadedWidgetState extends State<_LoadedWidget> {
         const SizedBox(height: 16),
         if (productList.isNotEmpty)
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               Language.swipeToDelete.capitalizeByWord(),
               style: Theme.of(context).textTheme.caption!.copyWith(
@@ -134,7 +134,7 @@ class __LoadedWidgetState extends State<_LoadedWidget> {
             separatorBuilder: (_, __) {
               return const SizedBox(height: 16);
             },
-            padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 20),
+            padding: EdgeInsets.symmetric(vertical: 14, horizontal: 20),
             itemBuilder: (context, index) {
               return Dismissible(
                 key: UniqueKey(),
@@ -160,7 +160,7 @@ class __LoadedWidgetState extends State<_LoadedWidget> {
                     color: redColor,
                     borderRadius: BorderRadius.circular(4),
                   ),
-                  padding: const EdgeInsets.only(right: 40),
+                  padding: EdgeInsets.only(right: 40),
                   alignment: Alignment.centerRight,
                   child: const Icon(
                     Icons.delete,

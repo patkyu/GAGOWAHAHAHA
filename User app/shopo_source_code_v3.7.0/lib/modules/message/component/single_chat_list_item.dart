@@ -16,7 +16,7 @@ class SingleChatListItem extends StatelessWidget {
         Navigator.pushNamed(context, RouteNames.messageScreen);
       },
       child: Container(
-        padding: const EdgeInsets.only(bottom: 16, top: 16),
+        padding: EdgeInsets.only(bottom: 16, top: 16),
         decoration: const BoxDecoration(
           border: Border(
             bottom: BorderSide(color: Color(0xffE8F4FF), width: 1),
@@ -54,7 +54,7 @@ class SingleChatListItem extends StatelessWidget {
                 _buildNumberOfMessage(item.numberOfMsg),
                 const SizedBox(height: 5),
                 Container(
-                  margin: const EdgeInsets.only(left: 16),
+                  margin: EdgeInsets.only(left: 16),
                   child: Text(
                     item.dateTime,
                     style: TextStyle(color: Colors.grey.shade400),
@@ -72,14 +72,14 @@ class SingleChatListItem extends StatelessWidget {
     if (s.isEmpty) {
       return Container(
         width: 20,
-        margin: const EdgeInsets.only(left: 16),
+        margin: EdgeInsets.only(left: 16),
         height: 20,
       );
     }
     return Container(
       width: 20,
       height: 20,
-      margin: const EdgeInsets.only(left: 16),
+      margin: EdgeInsets.only(left: 16),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: const Color(0xff18587A)),

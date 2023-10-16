@@ -10,7 +10,7 @@ class ProductDetailsButton extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+        padding: EdgeInsets.symmetric(vertical: 8, horizontal: 20),
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: redColor),

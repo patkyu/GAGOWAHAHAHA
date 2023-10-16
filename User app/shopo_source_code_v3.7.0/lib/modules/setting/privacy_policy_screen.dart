@@ -14,18 +14,25 @@ class PrivacyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     context.read<PrivacyAndTermConditionCubit>().getPrivacyPolicyData();
     return Scaffold(
-      appBar: RoundedAppBar(titleText: Language.privacyPolicy.capitalizeByWord()),
+      appBar:
+          RoundedAppBar(titleText: Language.privacyPolicy.capitalizeByWord()),
       body: BlocBuilder<PrivacyAndTermConditionCubit,
           PrivacyTermConditionCubitState>(
         builder: (context, state) {
           if (state is TermConditionCubitStateLoaded) {
             final termsAndCondition = state.privacyPolicyAndTermConditionModel;
             return ListView(
-              padding: const EdgeInsets.all(20),
-              children: [Html(data: termsAndCondition.privacyPolicy,style: {
-                'p':Style(color: textGreyColor,textAlign: TextAlign.justify),
-                'h':Style(color: blackColor,fontSize: FontSize.larger),
-              },)],
+              padding: EdgeInsets.all(20),
+              children: [
+                Html(
+                  data: termsAndCondition.privacyPolicy,
+                  style: {
+                    'p': Style(
+                        color: textGreyColor, textAlign: TextAlign.justify),
+                    'h': Style(color: blackColor, fontSize: FontSize.larger),
+                  },
+                )
+              ],
             );
           } else if (state is TermConditionCubitStateLoading) {
             return const Center(child: CircularProgressIndicator());

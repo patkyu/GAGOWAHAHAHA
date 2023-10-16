@@ -162,7 +162,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
       child: Scaffold(
         appBar: RoundedAppBar(titleText: 'Place Order'),
         body: ListView(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           children: [
             Text(
               Language.selectPaymentOption,
@@ -389,8 +389,8 @@ class PaymentCard extends StatelessWidget {
       child: Container(
         height: 70,
         alignment: Alignment.center,
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 24),
-        margin: const EdgeInsets.only(bottom: 15),
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 24),
+        margin: EdgeInsets.only(bottom: 15),
         decoration: BoxDecoration(
             color: deepGreenColor.withOpacity(0.1),
             borderRadius: BorderRadius.circular(4),

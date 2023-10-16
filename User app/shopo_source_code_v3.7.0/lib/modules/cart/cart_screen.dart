@@ -186,7 +186,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
       slivers: [
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 14),
+            padding: EdgeInsets.fromLTRB(20, 20, 20, 14),
             child: Row(
               children: [
                 const Icon(Icons.shopping_cart_rounded, color: redColor),
@@ -201,7 +201,7 @@ class _LoadedWidgetState extends State<_LoadedWidget> {
           ),
         ),
         SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           sliver: SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {

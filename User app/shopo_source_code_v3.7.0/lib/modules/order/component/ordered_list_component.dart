@@ -18,8 +18,8 @@ class OrderedListComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      margin: const EdgeInsets.symmetric(vertical: 9, horizontal: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      margin: EdgeInsets.symmetric(vertical: 9, horizontal: 10),
       decoration: const BoxDecoration(color: cardBgGreyColor),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +50,7 @@ class OrderedListComponent extends StatelessWidget {
                         arguments: orderedItem.orderId);
                   },
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
+                    padding: EdgeInsets.only(bottom: 8),
                     child: Text(Language.viewDetails.capitalizeByWord()),
                   )),
               Text(

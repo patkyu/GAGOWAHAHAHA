@@ -32,7 +32,7 @@ class _BankPaymentScreenState extends State<BankPaymentScreen> {
     return Scaffold(
       appBar: RoundedAppBar(titleText: 'Bank Payment'),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: ListView(
           shrinkWrap: true,
           children: [

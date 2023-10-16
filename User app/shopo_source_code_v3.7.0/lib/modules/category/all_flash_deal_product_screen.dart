@@ -33,7 +33,7 @@ class AllFlashDealProductScreen extends StatelessWidget {
         mainAxisSpacing: 18,
         mainAxisExtent: 210,
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
       itemCount: products.length,
       itemBuilder: (context, index) =>
           ProductCard(productModel: products[index]),

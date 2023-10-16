@@ -135,7 +135,7 @@ class ProfileAppBar extends StatelessWidget {
         ? RemoteUrls.imageUrl(userData.updateUserInfo.image)
         : RemoteUrls.imageUrl(userData.defaultImage!.image);
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: EdgeInsets.all(20),
       height: height - 60,
       decoration: BoxDecoration(
         color: Utils.dynamicPrimaryColor(context),

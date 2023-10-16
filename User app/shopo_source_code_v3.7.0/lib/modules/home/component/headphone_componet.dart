@@ -18,7 +18,7 @@ class WidthBannerComponent extends StatelessWidget {
     return SliverToBoxAdapter(
       child: Container(
           height: 164,
-          padding: const EdgeInsets.only(bottom: 20),
+          padding: EdgeInsets.only(bottom: 20),
           decoration: BoxDecoration(
               image: DecorationImage(
             image: NetworkImage(RemoteUrls.imageUrl(banner!)),

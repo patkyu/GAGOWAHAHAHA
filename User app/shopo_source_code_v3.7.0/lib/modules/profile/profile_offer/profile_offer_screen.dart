@@ -27,7 +27,7 @@ class ProfileOfferScreen extends StatelessWidget {
       //   separatorBuilder: (_, __) {
       //     return const SizedBox(height: 16);
       //   },
-      //   padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 32),
+      //   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 32),
       //   itemBuilder: (context, index) {
       //     return HotDealBanner(
       //       banner: banners[index],

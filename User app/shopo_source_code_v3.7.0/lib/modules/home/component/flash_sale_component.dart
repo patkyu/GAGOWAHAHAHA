@@ -26,8 +26,8 @@ class FlashSaleComponent extends StatelessWidget {
     return SliverToBoxAdapter(
       child: Container(
         height: 275,
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
-        margin: const EdgeInsets.only(bottom: 10, top: 15),
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+        margin: EdgeInsets.only(bottom: 10, top: 15),
         decoration: BoxDecoration(
           image: DecorationImage(
               image: NetworkImage(
@@ -59,7 +59,7 @@ class FlashSaleComponent extends StatelessWidget {
             const SizedBox(height: 8),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
+                padding: EdgeInsets.symmetric(horizontal: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,

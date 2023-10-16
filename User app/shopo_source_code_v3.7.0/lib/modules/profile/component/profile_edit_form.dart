@@ -205,7 +205,7 @@ class _ProfileEditFormState extends State<ProfileEditForm> {
                       decoration: InputDecoration(
                         hintText: Language.phoneNumber.capitalizeByWord(),
                         prefixIcon: CountryCodePicker(
-                          padding: const EdgeInsets.only(bottom: 8),
+                          padding: EdgeInsets.only(bottom: 8),
                           onChanged: (country) {
                             profileEdBlc
                                 .changePhoneCode(country.dialCode ?? '');

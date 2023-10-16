@@ -18,7 +18,7 @@ class BestSellerGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     if (sellers.isEmpty) return const SliverToBoxAdapter();
     return SliverPadding(
-      padding: const EdgeInsets.only(bottom: 10,left: 0,right: 0),
+      padding: EdgeInsets.only(bottom: 10, left: 0, right: 0),
       sliver: MultiSliver(
         children: [
           SliverToBoxAdapter(
@@ -26,7 +26,7 @@ class BestSellerGridView extends StatelessWidget {
               headerText: sectionTitle,
               onTap: () {
                 Navigator.pushNamed(context, RouteNames.allSellerList,
-                arguments: sellers);
+                    arguments: sellers);
               },
             ),
           ),
@@ -43,7 +43,6 @@ class BestSellerGridView extends StatelessWidget {
               childCount: sellers.length,
             ),
           ),
-
         ],
       ),
     );

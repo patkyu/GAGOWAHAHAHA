@@ -29,7 +29,7 @@ class _OfferBannerSliderState extends State<OfferBannerSlider> {
       return Container(
         color: const Color(0xffF6F6F6),
         child: Container(
-          margin: const EdgeInsets.only(top: 15, bottom: 20),
+          margin: EdgeInsets.only(top: 15, bottom: 20),
           height: height,
           child: Stack(
             children: [

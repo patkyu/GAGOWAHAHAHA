@@ -45,8 +45,10 @@ class _SettingScreenState extends State<SettingScreen> {
         padding: EdgeInsets.zero,
         children: [
           ListTile(
-            leading: const CustomImage(path: Kimages.profileNotificationIcon,
-            color: deepGreenColor,),
+            leading: const CustomImage(
+              path: Kimages.profileNotificationIcon,
+              color: deepGreenColor,
+            ),
             title: const Text('Notifications'),
             trailing: Switch.adaptive(
                 activeTrackColor: greenColor,
@@ -57,7 +59,10 @@ class _SettingScreenState extends State<SettingScreen> {
           ),
           border,
           ListTile(
-            leading: const CustomImage(path: Kimages.themeIcon,color: deepGreenColor,),
+            leading: const CustomImage(
+              path: Kimages.themeIcon,
+              color: deepGreenColor,
+            ),
             title: const Text('Dark Mode'),
             trailing: Switch.adaptive(
                 activeTrackColor: greenColor,
@@ -68,7 +73,10 @@ class _SettingScreenState extends State<SettingScreen> {
           ),
           border,
           ListTile(
-            leading: const CustomImage(path: Kimages.activeLocationIcon,color: deepGreenColor,),
+            leading: const CustomImage(
+              path: Kimages.activeLocationIcon,
+              color: deepGreenColor,
+            ),
             title: const Text('Active Location'),
             trailing: Switch.adaptive(
                 activeTrackColor: greenColor,
@@ -79,7 +87,10 @@ class _SettingScreenState extends State<SettingScreen> {
           ),
           border,
           ListTile(
-            leading: const CustomImage(path: Kimages.languageIcon,color: deepGreenColor,),
+            leading: const CustomImage(
+              path: Kimages.languageIcon,
+              color: deepGreenColor,
+            ),
             title: const Text('Language'),
             trailing: Switch.adaptive(
                 activeTrackColor: greenColor,
@@ -90,7 +101,10 @@ class _SettingScreenState extends State<SettingScreen> {
           ),
           border,
           ListTile(
-            leading: const CustomImage(path: Kimages.onClickIcon,color: deepGreenColor,),
+            leading: const CustomImage(
+              path: Kimages.onClickIcon,
+              color: deepGreenColor,
+            ),
             title: const Text('One ClicK Login'),
             trailing: Switch.adaptive(
                 activeTrackColor: greenColor,

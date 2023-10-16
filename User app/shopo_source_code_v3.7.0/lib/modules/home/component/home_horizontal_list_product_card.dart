@@ -74,7 +74,7 @@ class HomeHorizontalListProductCard extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      padding: const EdgeInsets.only(right: 8),
+      padding: EdgeInsets.only(right: 8),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(4),
@@ -130,7 +130,7 @@ class HomeHorizontalListProductCard extends StatelessWidget {
                     glow: true,
                     glowColor: Utils.dynamicPrimaryColor(context),
                     tapOnlyMode: true,
-                    itemPadding: const EdgeInsets.symmetric(horizontal: 0.0),
+                    itemPadding: EdgeInsets.symmetric(horizontal: 0.0),
                     itemBuilder: (context, _) => const Icon(
                       Icons.star,
                       color: Colors.yellow,

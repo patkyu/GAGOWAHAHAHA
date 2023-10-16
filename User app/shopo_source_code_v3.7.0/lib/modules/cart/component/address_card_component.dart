@@ -28,7 +28,7 @@ class AddressCardComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = pWidth ?? MediaQuery.of(context).size.width * 0.8;
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+      padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
       width: width,
       decoration: BoxDecoration(
         color: selectAddress == addressModel.id
@@ -44,7 +44,7 @@ class AddressCardComponent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 4, bottom: 10.0),
+            padding: EdgeInsets.only(top: 4, bottom: 10.0),
             child: Icon(Icons.location_on_outlined,
                 color: Utils.dynamicPrimaryColor(context)),
           ),

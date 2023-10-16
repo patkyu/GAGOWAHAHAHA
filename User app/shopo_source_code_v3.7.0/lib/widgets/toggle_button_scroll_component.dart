@@ -50,7 +50,7 @@ class _ToggleButtonScrollComponentState
         widget.onChange(initialLabelIndex);
       }),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8),
+        padding: EdgeInsets.symmetric(horizontal: 8),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: initialLabelIndex == key
@@ -74,7 +74,7 @@ class _ToggleButtonScrollComponentState
     return Container(
       height: 36,
       width: MediaQuery.of(context).size.width,
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       decoration: BoxDecoration(
         border: Border.all(color: borderColor),
         borderRadius: BorderRadius.circular(2),

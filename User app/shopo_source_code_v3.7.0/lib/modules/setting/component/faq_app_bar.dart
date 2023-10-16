@@ -53,7 +53,7 @@ class FaqAppBar extends StatelessWidget implements PreferredSizeWidget {
           decoration: inputDecorationTheme.copyWith(
             prefixIcon: const Icon(Icons.search, size: 26),
             hintText: 'Search Name...',
-            contentPadding: const EdgeInsets.symmetric(
+            contentPadding: EdgeInsets.symmetric(
               vertical: 11,
               horizontal: 16,
             ),

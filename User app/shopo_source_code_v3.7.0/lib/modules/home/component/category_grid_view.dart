@@ -19,7 +19,7 @@ class CategoryGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     if (categoryList.isEmpty) return const SliverToBoxAdapter();
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
       sliver: MultiSliver(
         children: [
           SliverToBoxAdapter(
@@ -33,7 +33,7 @@ class CategoryGridView extends StatelessWidget {
           const SliverToBoxAdapter(child: SizedBox(height: 10)),
           SliverToBoxAdapter(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -41,7 +41,7 @@ class CategoryGridView extends StatelessWidget {
                   ...List.generate(
                       categoryList.length > 6 ? 6 : categoryList.length,
                       (index) => Padding(
-                            padding: const EdgeInsets.only(right: 24),
+                            padding: EdgeInsets.only(right: 24),
                             child: CategoryCircleCard(
                                 categoriesModel: categoryList[index]),
                           ))

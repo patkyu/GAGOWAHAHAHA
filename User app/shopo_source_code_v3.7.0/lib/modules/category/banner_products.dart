@@ -35,8 +35,8 @@ class BannerProductScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: GridView.builder(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 20),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
@@ -62,7 +62,7 @@ class BannerProductScreen extends StatelessWidget {
           if (state is ProductsStateMoreDataLoading) {
             return Container(
               height: 60,
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: EdgeInsets.symmetric(vertical: 10),
               child: const Center(
                 child: CircularProgressIndicator(),
               ),

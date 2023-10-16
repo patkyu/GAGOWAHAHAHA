@@ -113,7 +113,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   child: BlocBuilder<ChatBloc, ChatStateModel>(
                     builder: (context, state) {
                       return GroupedListView<MessagesDto, DateTime>(
-                        padding: const EdgeInsets.all(8).copyWith(bottom:60),
+                        padding: EdgeInsets.all(8).copyWith(bottom: 60),
                         elements: chatBloc.messages,
                         controller: controller,
                         groupBy: (element) => DateTime(
@@ -188,7 +188,7 @@ class _MessageSeparator extends StatelessWidget {
     return Container(
       height: 50,
       alignment: Alignment.center,
-      margin: const EdgeInsets.symmetric(vertical: 6),
+      margin: EdgeInsets.symmetric(vertical: 6),
       child: Text(
         DateFormat.yMMMMd("en_US").format(groupByValue),
         style: const TextStyle(

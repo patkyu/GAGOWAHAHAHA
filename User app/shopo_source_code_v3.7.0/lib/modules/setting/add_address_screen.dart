@@ -114,7 +114,7 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                 }
               }
               return SingleChildScrollView(
-                padding: const EdgeInsets.all(20),
+                padding: EdgeInsets.all(20),
                 child: Form(
                   key: _formkey,
                   child: Column(
@@ -142,8 +142,7 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                       ),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.name.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.name.first),
+                          ErrorText(text: addressState.errorMsg.name.first),
                       ],
                       const SizedBox(height: 16),
                       TextFormField(
@@ -163,8 +162,7 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                       ),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.email.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.email.first),
+                          ErrorText(text: addressState.errorMsg.email.first),
                       ],
                       const SizedBox(height: 16),
                       TextFormField(
@@ -183,29 +181,25 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                       ),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.phone.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.phone.first),
+                          ErrorText(text: addressState.errorMsg.phone.first),
                       ],
                       const SizedBox(height: 16),
                       _countryField(countries),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.country.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.country.first),
+                          ErrorText(text: addressState.errorMsg.country.first),
                       ],
                       const SizedBox(height: 16),
                       stateField(),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.state.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.state.first),
+                          ErrorText(text: addressState.errorMsg.state.first),
                       ],
                       const SizedBox(height: 16),
                       cityField(),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.city.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.city.first),
+                          ErrorText(text: addressState.errorMsg.city.first),
                       ],
                       const SizedBox(height: 16),
                       TextFormField(
@@ -222,8 +216,7 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                       ),
                       if (addressState is AddressStateInvalidDataError) ...[
                         if (addressState.errorMsg.address.isNotEmpty)
-                          ErrorText(
-                              text: addressState.errorMsg.address.first),
+                          ErrorText(text: addressState.errorMsg.address.first),
                       ],
                       const SizedBox(height: 16),
                       // TextFormField(

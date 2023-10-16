@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import '../../home/model/product_model.dart';
 
@@ -11,7 +9,8 @@ import '../model/product_details_product_model.dart';
 
 class ProductHeaderComponent extends StatefulWidget {
   const ProductHeaderComponent(
-    this.product,this.gallery, {
+    this.product,
+    this.gallery, {
     Key? key,
   }) : super(key: key);
 
@@ -55,7 +54,6 @@ class _ProductHeaderComponentState extends State<ProductHeaderComponent> {
   }
 
   Widget _buildGalleryImage() {
-
     return Positioned(
       left: 0,
       right: 0,
@@ -66,12 +64,12 @@ class _ProductHeaderComponentState extends State<ProductHeaderComponent> {
             .take(4)
             .map(
               (e) => Container(
-                padding: const EdgeInsets.all(8),
+                padding: EdgeInsets.all(8),
                 height: 70,
                 width: 70,
-                margin: const EdgeInsets.only(right: 15),
+                margin: EdgeInsets.only(right: 15),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(0),
                     border: Border.all(color: Colors.white)),
                 child: InkWell(

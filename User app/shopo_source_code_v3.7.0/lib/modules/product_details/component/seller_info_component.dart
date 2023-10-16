@@ -16,7 +16,7 @@ class SellerInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,8 +140,7 @@ class SellerProfile extends StatelessWidget {
                         ignoreGestures: true,
                         itemCount: 5,
                         itemSize: 15,
-                        itemPadding:
-                            const EdgeInsets.symmetric(horizontal: 2.0),
+                        itemPadding: EdgeInsets.symmetric(horizontal: 2.0),
                         itemBuilder: (context, _) => const Icon(
                           Icons.star,
                           color: Colors.amber,
@@ -150,7 +149,7 @@ class SellerProfile extends StatelessWidget {
                       ),
                       Container(
                           width: 1,
-                          margin: const EdgeInsets.symmetric(horizontal: 6),
+                          margin: EdgeInsets.symmetric(horizontal: 6),
                           height: 24,
                           color: borderColor),
                       Text(
@@ -185,7 +184,7 @@ class SellerProducts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
+      padding: EdgeInsets.only(bottom: 8),
       child: RichText(
         text: TextSpan(
           text: "$title: ",
